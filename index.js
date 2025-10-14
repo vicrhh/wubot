@@ -1,3 +1,14 @@
+const express = require('express');
+const app = express();
+const port = process.env.PORT || 3000;
+
+app.get('/', (req, res) => {
+  res.send('O bot está vivo!');
+});
+
+app.listen(port, () => {
+  console.log(`Servidor web ouvindo na porta ${port}`);
+});
 // Carrega as variáveis de ambiente do arquivo .env
 require('dotenv').config();
 const TOKEN = process.env.DISCORD_TOKEN;
