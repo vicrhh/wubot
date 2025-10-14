@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "discord.js": "^14.20.0",
+    "dotenv": "^16.5.0"
+  },
+  "name": "wu-bot-main",
+  "version": "1.0.0",
+  "description": "Este é um bot para o Discord que permite o envio de mensagens diretas (DMs) para os membros de um servidor, com suporte a mensagens simples ou embutidas (embeds). O bot possui funcionalidades de controle de envio, como o limite de mensagens por minuto, e também realiza log das mensagens enviadas.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

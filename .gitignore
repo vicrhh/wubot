@@ -1,0 +1,16 @@
+# Arquivo de configuração com segredos e tokens. ESSENCIAL IGNORAR!
+.env
+
+# Pasta com todas as dependências do Node.js. O comando 'npm install' recria isso.
+node_modules/
+
+# Arquivos de log e de dados gerados pelo bot. Não devem ir para o repositório.
+log_mensagens.txt
+enviados.json
+
+# Arquivos de sistema operacional que podem aparecer (boa prática)
+.DS_Store
+Thumbs.db
+
+# Arquivos de log de erros do NPM (boa prática)
+npm-debug.log*
