@@ -15,7 +15,7 @@ const TOKEN = process.env.DISCORD_TOKEN;
 const ID_DO_DONO = process.env.ID_DO_DONO;
 const CANAL_LOGS_ID = process.env.CANAL_LOGS_ID;
 
-// Importa TODOS os componentes necessários do discord.js de uma vez!
+// Importa TODOS os componentes necessários do discord.js de uma vez
 const { Client, GatewayIntentBits, PermissionsBitField, EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle, ModalBuilder, TextInputBuilder, TextInputStyle, MessageFlags } = require('discord.js');
 const fs = require('fs');
 
@@ -38,7 +38,7 @@ let mensagensEnviadasNoMinuto = 0;
 const LIMITE_MENSAGENS_POR_MINUTO = 50;
 const TEMPO_REINICIO = 60000;
 
-// --- FUNÇÕES AUXILIARES ORIGINAIS (INTACTAS) ---
+// --- FUNÇÕES AUXILIARES ---
 function wait(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -275,7 +275,7 @@ if (message.content.startsWith('!enviarpesquisadm')) {
         }
         // --- FIM DA LÓGICA DE LIMITE ---
 
-        await wait(1200); // Mantemos a pausa curta para sermos gentis com a API
+        await wait(1200); // Mantendo a pausa curta para ser gentil com a API
       }
     }
     
