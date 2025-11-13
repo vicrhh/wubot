@@ -217,8 +217,19 @@ client.on('messageCreate', async message => {
       return message.reply('❌ Informe pelo menos um cargo. Exemplo: `!enviardmsimples membro visitante`');
     }
     const cargosFiltro = args.map(c => c.toLowerCase());
-    const messageContent = `# 🔎 PIQUE-ESCONDE 🕵️ <t:1756576800:R>\n\nPara comemorar 1 ano da existência do nosso segundo clã, o 🎂 **Warlords Unity** 🎉, organizamos mais uma edição de um evento que muitos pediram no decorrer dos últimos meses!\n\n📅 **Data:** <t:1756576800:D>\n⏰ **Horário:** <t:1756576800:t>\n🌎 **Mundo:** 47\n📍 **Ponto de encontro:** Burthorpe\n💰 **2b em prêmios**\n\n**Como funciona**❓\nQuatro organizadores do evento se escondem por Guilenor e dão pistas até que alguém os encontre.\nA cada rodada, os escondidos poderão se camuflar cada vez mais no mapa, seja usando roupas semelhantes às de NPCs, transmutações, poção da camuflagem, descansos, etc. Vence quem negociar primeiro com o escondido.\n\n**Mais informações sobre o evento no canal oficial:** 👉https://discord.com/channels/380398637353533440/1410658629836603443👈`;
-    const imageLinks = ['https://i.imgur.com/bIecnPf.png'];
+    const messageContent = `# 🚨 [DOUBLE XP](https://rs.runescape.com/pt-BR/double-xp) 🚨 
+## ⚠️ Possível último grande DXP do jogo! ⚠️
+## ⏳ Início: <t:1763121600:R> — Término: <t:1763985600:R>
+Com o fim das **Arcas do Tesouro** em 19 de janeiro de 2026, e sem nenhum outro Double XP previsto até que removam definitivamente os proteicos, bonecos, portáteis, núcleos, etc, esta pode ser a sua **última oportunidade** de gastar seus itens bônus e alcançar níveis que ficarão muito mais difíceis no futuro.
+O clã oferecerá suporte total nestes 10 dias! Caso tenha dúvidas, utilize nosso canal de ajuda https://discord.com/channels/380398637353533440/1279701860294590496 ou entre em contato com a conta do clã <@1239919059789807646>.
+
+🗓️ 14 de novembro de 2025 - Double XP 
+🗓️ 17 de novembro de 2025 - Atualização em Lumbridge
+🗓️ 12 de janeiro de 2026 - Chaves não serão mais recebidas e vendidas
+🗓️ 19 de janeiro de 2026 - Fim das Arcas do Tesouro e Cacarecos
+🗓️ Fevereiro de 2026 - Double XP adiado
+🗓️ Janeiro de 2027 - Remoção de objetos da Arca`;
+    const imageLinks = [];
     await enviarMensagens(message.guild, messageContent, imageLinks, false, message, cargosFiltro);
   }
   
